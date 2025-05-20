@@ -3,24 +3,11 @@ import Header from "../Components/Header";
 import Sidebar from "../Components/Sidebar";
 
 function Dashboard() {
-  const arrayNomi = [
-    "Andrea",
-    "Giuseppe",
-    "Giovanni",
-    "Francesco",
-    "Davide",
-    "Marco",
-    "Luca",
-  ];
-  const [username] = React.useState(() => {
-    const randomIndex = Math.floor(Math.random() * arrayNomi.length);
-    return arrayNomi[randomIndex];
-  });
 
   return (
     <>
       <div style={myStyles.page}>
-        <Header username={username} />
+        <Header username={"Marco"} />
         <div style={myStyles.main}>
           <Sidebar />
           <section style={myStyles.metrics}>
@@ -28,9 +15,10 @@ function Dashboard() {
               <h1>Dashboard</h1>
               <h4>Ultimi ordini</h4>
               <ul style={myStyles.menu}>
-                <li>Ordine #12345 – €52</li>
-                <li>Ordine #12344 – €17</li>
-                <li>Ordine #12343 – €83</li>
+                <li>Ordine - #Costume da bagno – €52</li>
+                <li>Ordine - #Mouse – €17</li>
+                <li>Ordine - #Notebook – €800</li>
+                <li>...</li>
               </ul>
             </div>
           </section>

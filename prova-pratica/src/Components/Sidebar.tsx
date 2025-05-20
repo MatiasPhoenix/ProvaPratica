@@ -5,7 +5,7 @@ const Sidebar = () => {
   const navigate = useNavigate();
 
   const handleProfile = () => {
-    navigate("/user");
+    navigate("/dashboard");
   };
   const handleOrders = () => {
     navigate("/order");
